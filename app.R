@@ -25,10 +25,10 @@ riders$date <- mdy(riders$date)
 
 station_coord <- read.delim(file="station_coor.tsv", sep="\t", fileEncoding = "UTF-8")
 
-temp <- merge(subset(riders,date==ymd("2021-08-23")),
-      station_coord,
-      by="station_id"
-)
+# temp <- merge(subset(riders,date==ymd("2021-08-23")),
+#       station_coord,
+#       by="station_id"
+# )
 
 # Define UI for application that draws a histogram
 ui <- fillPage(
